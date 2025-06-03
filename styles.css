@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'zelda-script';
+}
+
+@font-face {
+    font-family: 'zelda-script';
+    src: url('./resources/fonts/Cal_Sans/CalSans-Regular.ttf')
+}
+
+header {
+    background-color: #f18c8e;
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+header>div {
+    flex: 1;
+}
+
+#logo {
+    display: flex;
+    flex: 1;
+    padding-left: 30px;
+}
+
+#title {
+    align-items: center;
+}
+
+#icon {
+    border-radius: 5px;
+    border: white solid 2px;
+    object-fit: cover;
+}
+
+h1 {
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex: 1;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    flex: 1;
+    font-weight: normal;
+}
+
+nav>div {
+    font-size: 20px;
+}
+
+nav>div>a {
+    text-decoration: none;
+    color: white;
+}
+
+nav>div>a:hover {
+    background-color: #f1d1b5;
+    transition: 300ms;
+    border-radius: 5px;
+}
+
+main {
+    flex-direction: column;
+    display: flex;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+}
+
+.section0 {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section0>div {
+    max-width: 850px;
+}
+
+.section0>div>h2 {
+    color: #305f72;
+}
+
+.section {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.section>div>h2 {
+    color: #305f72;
+}
+
+.section1>div>h2 {
+    color: #305f72;
+}
+
+.section>div {
+    max-width: 80%;
+}
+
+.times {
+    background-color: #568ea6;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 850px;
+    padding: 5px;
+
+}
+
+h3 {
+    color: #f4f4f4;
+    font-weight: normal;
+}
+
+.times:hover {
+    background-color: #305f72;
+    color: #f4f4f4;
+    transition: 300ms;
+}
+
+.section1 {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+#fixtext>h2 {
+    color: #305f72;
+    max-width: 850px;
+}
+
+#textup {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 875px;
+    align-self: center;
+}
+
+.games {
+    background-color: #f0b7a4;
+    border-radius: 5px;
+    text-align: center;
+    height: 500px;
+    margin: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+}
+
+.gamedesc {}
+
+.games:hover {
+    background-color: #f18c8e;
+    color: #f4f4f4;
+    transition: 300ms;
+}
+
+.iconic>p {
+    width: 85%;
+}
+
+#pic {
+    border-radius: 5px;
+    height: 22vh;
+    border: white solid 2px;
+    object-fit: cover;
+}
+
+#about {
+    width: 64%;
+}
+
+footer {
+    text-align: center;
+    background-color: #305f72;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 810px) {
+    header {
+        flex-direction: column;
+        display: flex;
+    }
+
+    #logo {
+        align-items: center;
+        padding: 0px;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    nav {
+        padding-bottom: 12px;
+    }
+
+    .iconic {
+        max-width: 45%;
+        min-width: 250px;
+    }
+
+    .section>div {
+        margin: 0px 10px;
+    }
+
+    #textup {
+        margin: 0px 10px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    header {
+        flex-direction: column;
+        display: flex;
+    }
+
+    #logo {
+        align-items: center;
+        padding: 0px;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    nav {
+        padding-bottom: 12px;
+        flex-direction: column;
+    }
+}
